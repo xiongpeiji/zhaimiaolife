@@ -1,0 +1,41 @@
+<!--pages/team/team.wxml-->
+<view class='container'>
+  <!--排序菜单-->
+  <view class='sort-cont'>
+    <view class="item-cont {{invite_level}}">
+      <view class='item-sort son' bindtap='showSon'>直接邀请</view>
+      <view class='item-sort other' bindtap='showOther'>间接邀请</view>
+    </view>
+    <image class='menu' src='../../images/dian.png'></image>
+    <!--团队列表-->
+    <view class='team-cont'>
+      <text>全部邀请</text>
+      <text>V1推广员</text>
+      <text>V2推广员</text>
+      <text>V3推广员</text>
+      <text>V4推广员</text>
+      <text>团长</text>
+    </view>
+  </view>
+  <!--推广团队列表-->
+  <view class='team-lists'>
+    <view class="empty" hidden="{{listLen != 0}}">暂无邀请记录~</view>
+    <block wx:for="{{list}}">
+      <view class='team-member'>
+        <image src='{{item.avatar? item.avatar: "../../images/user-icon.png"}}'></image>
+        <view class='member-text'>
+          <text class='user-name'>{{item.nickname}}</text>
+          <text class='nickname'>微信备注名</text>
+        </view>
+        <view class='level'>
+          <text class='level-name head'>{{item.level_view}}</text>
+          <text class='data'>{{item.add_time_trans}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--分享按钮-->
+  <view class='share'>
+    <button open-type='share' class='share-btnr'>继续分享</button>
+  </view>
+</view>

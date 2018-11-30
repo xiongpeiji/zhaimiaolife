@@ -1,0 +1,101 @@
+<!--pages/income/income.wxml-->
+<view class='container'>
+  <view class='tg-top'>
+    <view class='month'>
+      <text class='mon-title'>本月成交预估</text>
+      <view class='estimate'>
+        <text>{{income.current_month_paid_commission}}</text>元
+      </view>
+    </view>
+    <view class='month'>
+      <text class='mon-title'>上月成交预估</text>
+      <view class='estimate'>
+        <text>{{income.before_month_paid_commission}}</text>元
+      </view>
+    </view>
+  </view>
+  <!--各项展示-->
+  <view class='overview'>
+    <view class='view-list'>
+      <image src='../../images/tg-icon01.png'></image>
+      <text class='view-tit'>今日订单数</text>
+      <text class='view-cons'>{{income.today_order_num}}</text>
+    </view>
+
+    <view class='view-list'>
+      <image src='../../images/tg-icon02.png'></image>
+      <text class='view-tit'>今日成交预估</text>
+      <text class='view-cons'>{{income.today_paid_commission}}</text>
+    </view>
+
+    <view class='view-list'>
+      <image src='../../images/tg-icon03.png'></image>
+      <text class='view-tit'>今日结算预估</text>
+      <text class='view-cons'>{{income.today_settle_commission}}</text>
+    </view>
+
+    <view class='view-list'>
+      <image src='../../images/tg-icon04.png'></image>
+      <text class='view-tit'>昨日订单数</text>
+      <text class='view-cons'>{{income.yesterday_order_num}}</text>
+    </view>
+
+    <view class='view-list'>
+      <image src='../../images/tg-icon05.png'></image>
+      <text class='view-tit'>昨日成交预估</text>
+      <text class='view-cons'>{{income.yesterday_paid_commission}}</text>
+    </view>
+
+    <view class='view-list'>
+      <image src='../../images/tg-icon06.png'></image>
+      <text class='view-tit'>昨日结算预估</text>
+      <text class='view-cons'>{{income.yesterday_settle_commission}}</text>
+    </view>
+
+  </view>
+  <!--链接列表-->
+  <view class='tg-link'>
+
+    <view class='tg-text text-mb' bindtap='orderDetail'>
+      <text class='text-title-tg'>订单明细</text>
+      <image src='../../images/tg-right.png'></image>
+    </view>
+
+    <view class='tg-text' bindtap='withdrawals'>
+      <text class='text-title-tg'>账户余额</text>
+      <image src='../../images/tg-right.png'></image>
+      <text class='text-title-tg-fr'>￥{{userInfo.account_balance}}</text>
+    </view>
+
+    <view class='tg-text' bindtap='diaryaccount'>
+      <text class='text-title-tg'>收入流水</text>
+      <image src='../../images/tg-right.png'></image>
+    </view>
+
+    <view class='tg-text' bindtap='presentrecord'>
+      <text class='text-title-tg'>提现记录</text>
+      <image src='../../images/tg-right.png'></image>
+    </view>
+
+  </view>
+  <view class='rules'>
+    <text bindtap='showRule'>规则说明</text>
+  </view>
+  <!---规则说明弹窗----->
+  <view class='max-bg' hidden="{{hideRule}}">
+    <view class='rules-con'>
+      <text class='rules-title'>规则说明</text>
+      <view class='rules-text-list'>
+        <view>
+          <text>1、</text>下单支付后会在预估收入里查看（会有不定期的延时）</view>
+        <view>
+          <text>2、</text>订单在确定收货（结算）后才会呈现在结算预估收入里</view>
+        <view>
+          <text>3、</text>当申请售后（维权）成功后会从预估收入及结算预估收入中剔除</view>
+        <view>
+          <text>4、</text>取消订单、退款退货、申请售后维权都会产生预估收入和结算收入的数据变动</view>
+      </view>
+      <view class='btn-know' bindtap='iKnow'>我知道了</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,136 @@
+/* pages/promotion/promotion.wxss */
+
+.promotion-img {
+  width: 100%;
+  font-size: 0;
+}
+
+.promotion-img image {
+  display: block;
+  width: 100%;
+  height: 750rpx;
+}
+
+.promotion-text {
+  width: 100%;
+  padding: 20rpx 12rpx 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.promotion-box {
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 40rpx;
+  padding-bottom: 25rpx;
+}
+
+.pro-title {
+  font-size: 26rpx;
+  color: #141414;
+  font-weight: bold;
+  line-height: 46rpx;
+}
+
+.pro-price {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 12rpx;
+}
+
+.now-price {
+  float: left;
+  font-size: 26rpx;
+  color: #ff1849;
+  font-weight: bold;
+}
+
+.now-price text {
+  font-size: 36rpx;
+  color: #ff1849;
+}
+
+.pro-price .cost-price {
+  float: left;
+  font-size: 22rpx;
+  color: #8c8c8c;
+  margin-left: 30rpx;
+  text-decoration: line-through;
+}
+
+.ticket {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 0;
+}
+
+.ticket-price {
+  display: block;
+  float: left;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #fbc359;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 10rpx;
+}
+
+.ticket-nums {
+  font-size: 22rpx;
+  color: #888;
+  margin-left: 20rpx;
+}
+
+.volume {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22rpx 30rpx 0 40rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.volume text {
+  font-size: 22rpx;
+  color: #808080;
+}
+
+.volume .vol-num {
+  float: left;
+}
+
+.volume .get-money {
+  float: right;
+}
+
+.share {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.share-btnl {
+  display: block;
+  float: left;
+  width: 37%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ff8080;
+  font-weight: bold;
+}
+
+.share-btnr {
+  display: block;
+  float: left;
+  width: 63%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ff1849;
+  font-weight: bold;
+}

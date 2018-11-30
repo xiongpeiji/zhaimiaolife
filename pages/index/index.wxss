@@ -1,0 +1,168 @@
+/**index.wxss**/
+
+.top-search {
+  width: 100%;
+  box-sizing: border-box;
+  height: 88rpx;
+  padding: 10rpx 30rpx;
+  background: #ff1849;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.search-box {
+  position: relative;
+  font-size: 0;
+}
+
+.top-search input {
+  color: #8c8c8c;
+  background: #fff;
+  width: 100%;
+  background: #fff;
+  height: 64rpx;
+  display: block;
+  line-height: 64rpx;
+  border-radius: 32rpx;
+  box-sizing: border-box;
+  padding-left: 64rpx;
+  font-size: 24rpx;
+}
+
+swiper {
+  margin-top: 88rpx;
+}
+
+.top-search image.srarch-icon {
+  position: absolute;
+  width: 33rpx;
+  height: 30rpx;
+  left: 18rpx;
+  top: 18rpx;
+}
+
+.menu-auto {
+  width: 100%;
+  overflow: auto;
+}
+
+.btn-area {
+  padding: 14rpx 0 14rpx;
+  background: #fff;
+  overflow-x: auto;
+  margin-bottom: 8px;
+  width: 120%;
+}
+
+.btn-area .menu {
+  display: block;
+  width: 16.66%;
+  height: 135rpx;
+  text-align: center;
+  float: left;
+}
+
+.btn-area .menu image {
+  width: 88rpx;
+  height: 88rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+}
+
+.btn-area .menu text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+}
+
+.product-cont {
+  width: 750rpx;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-cont .pro-list {
+  width: 355rpx;
+  font-size: 0;
+  background: #fff;
+  margin-bottom: 8rpx;
+  margin-right: 13rpx;
+  float: left;
+}
+
+.product-cont .pro-list image {
+  width: 100%;
+  height: 355rpx;
+}
+
+.pro-img {
+  position: relative;
+}
+
+.pro-img text {
+  display: block;
+  position: absolute;
+  line-height: 32rpx;
+  min-width: 110rpx;
+  text-align: center;
+  font-size: 24rpx;
+  right: 0;
+  bottom: 0;
+  background: #ffc1c1;
+  z-index: 2;
+  color: #fff;
+}
+
+.pro-tit {
+  display: block;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  padding: 0 20rpx;
+  width: 355rpx;
+  box-sizing: border-box;
+  color: #262626;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.price-text {
+  display: block;
+  line-height: 36rpx;
+  padding: 0 20rpx;
+  width: 355rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+
+.pri-big {
+  font-size: 22rpx;
+  color: #ff1849;
+  float: left;
+  line-height: 36rpx;
+}
+
+.pri-big text {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.pri-sm {
+  float: right;
+  font-size: 18rpx;
+  color: #8a8a8a;
+}
+
+.pri-sm-l {
+  float: left;
+  font-size: 18rpx;
+  color: #8a8a8a;
+}

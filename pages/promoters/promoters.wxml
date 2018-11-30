@@ -1,0 +1,44 @@
+<!--pages/promoters/promoters.wxml-->
+<view class='container'>
+  <view class='prombanner'>
+    <image class='prom-img' src='../../images/tg-banner.png'></image>
+    <text>每个人都可以分享邀请其他人注册，被邀请的人下单邀请者可获得平台展示收入的20%。
+</text>
+  </view>
+  <view class='proer-list'>
+    <view class='pro-text-con'>
+      <text class='pro-tit'>邀请1人可升级为V1推广员</text>
+      <text class='pro-text'>V1推广员权益：自己或分享出去别人下单可获得平台展示的100%收入
++被邀请者下单平台返利20%（此为平台补贴返利）</text>
+    </view>
+
+    <view class='pro-text-con'>
+      <text class='pro-tit'>直接邀请10人可升级为V2推广员</text>
+      <text class='pro-text'>V2推广员权益：V1推广员权益+邀请下级的人下单平台额外补贴5%（限补一个月）</text>
+    </view>
+
+    <view class='pro-text-con'>
+      <text class='pro-tit'>直接邀请25人可升级为V3推广员</text>
+      <text class='pro-text'>V3推广员权益：V1推广员权益+邀请下级的人下单平台额外补贴10%（限补一个月）</text>
+    </view>
+
+    <view class='pro-text-con'>
+      <text class='pro-tit'>直接邀请50人可升级为V4推广员</text>
+      <text class='pro-text'>V4推广员权益：V1推广员权益+邀请下级的人下单平台额外补贴15%（限补一个月）</text>
+    </view>
+
+    <view class='pro-text-con'>
+      <text class='pro-tit'>直接邀请100人及下级推广员邀请200人以上可升级为团长</text>
+      <text class='pro-text'>团长权益：V1推广员权益+平台返利所有被邀请人及其以下所有级别的44%</text>
+    </view>
+
+    <view class='pro-text-con'>
+      <text class='pro-tit'>团长级别旗下的人升级成为团长后，平台也会继续补贴下级团长所获佣金的16%</text>
+    </view>
+
+  </view>
+  <!--购买按钮-->
+  <view class='share'>
+    <button class='share-btnr' open-type='share'>分享小程序</button>
+  </view>
+</view>

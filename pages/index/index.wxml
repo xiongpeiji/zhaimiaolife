@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='top-search'>
+    <view class='search-box'>
+      <image class='srarch-icon' src='../../images/search.png'></image>
+      <input bindtap="gotoSearch" placeholder="搜索优惠商品" />
+    </view>
+  </view>
+  <!--banner轮播-->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+    <block wx:for="{{imgUrls}}" wx:key="swiper">
+      <swiper-item>
+        <block wx:if="{{item.jump_type == 4}}">
+          <navigator url="../buy/buy?id={{item.content}}">
+            <image src="{{item.img_url}}" class="slide-image" />
+          </navigator>
+        </block>
+        <block wx:else>
+          <image src="{{item.img_url}}" class="slide-image" />
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--菜单列表-->
+  <view class="menu-area">
+    <view class="menu-auto">
+      <view class="btn-area">
+        <block wx:for="{{menuArr}}" wx:key="menu-auto">
+          <view class="menu" data-index="{{index}}" bindtap="gotoMenu">
+            <image src='{{item.img_src}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <!--商品列表-->
+  <view class='product-cont'>
+    <block wx:for="{{goods}}" wx:key="product-cont">
+      <view class='pro-list' data-id="{{item.goods_id}}" bindtap="showDetail">
+        <view class='pro-img'>
+          <image src='{{item.goods_thumbnail_url}}'></image>
+          <text>券{{item.coupon_discount}}元</text>
+        </view>
+        <text class='pro-tit'>{{item.goods_name}}</text>
+        <view class='price-text'>
+          <view class='pri-big'>
+            券后
+            <text>￥{{item.after_coupon_price}}</text>
+          </view>
+          <view class='pri-sm' wx:if="{{level > 0}}">
+            收益
+            <text>{{item.commission}}元</text>
+          </view>
+        </view>
+        <view class='price-text'>
+          <view class='pri-sm-l'>
+            原价
+            <text>￥{{item.min_group_price}}</text>
+          </view>
+          <view class='pri-sm'>
+            销量
+            <text>{{item.sold_quantity}}件</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

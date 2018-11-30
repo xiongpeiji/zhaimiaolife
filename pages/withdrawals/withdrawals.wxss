@@ -1,0 +1,54 @@
+/* pages/withdrawals/withdrawals.wxss */
+.container{
+  background: #fff;
+}
+.dra-con{
+  width: 100%;
+  padding: 55rpx 46rpx;
+  box-sizing: border-box;
+}
+.dar-tit{
+  font-size: 30rpx;
+  color:#141414;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 95rpx;
+}
+.balance{
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 72rpx;
+  display: block;
+  text-align: center;
+  color:#ff2655;
+  font-weight: bold;
+  margin-bottom: 104rpx;
+}
+.dra-btn{
+  width: 100%;
+  text-align: center;
+  line-height: 66rpx;
+  font-size: 30rpx;
+  color:#fff;
+  font-weight: bold;
+  background: #ff2655;
+  border-radius: 6rpx;
+  margin-bottom: 45rpx;
+}
+.txxz{
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  color:#8c8c8c;
+  line-height: 24rpx;
+  margin-bottom: 30rpx;
+}
+.tx-text{
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  color:#8c8c8c;
+  line-height: 60rpx;
+  padding-left: 80rpx;
+}

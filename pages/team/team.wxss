@@ -1,0 +1,174 @@
+/* pages/team/team.wxss */
+
+.sort-cont, .item-cont {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  height: 67rpx;
+  display: flex;
+  z-index: 100;
+  box-shadow: 0 5rpx 5rpx 5rpx #ededed;
+}
+
+.item-sort {
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  color: #141414;
+  line-height: 67rpx;
+  position: relative;
+}
+
+.item-sort.active::after {
+  display: block;
+  content: "";
+  width: 112rpx;
+  height: 2px;
+  background: #ff1849;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -56rpx;
+}
+
+.item-cont.son .son::after, .item-cont.other .other::after {
+  display: block;
+  content: "";
+  width: 112rpx;
+  height: 2px;
+  background: #ff1849;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -56rpx;
+}
+
+.menu {
+  width: 34rpx;
+  height: 34rpx;
+  position: absolute;
+  right: 15rpx;
+  top: 20rpx;
+}
+
+.team-cont {
+  width: 238rpx;
+  padding: 20rpx 18rpx;
+  background: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  right: 40rpx;
+  top: 68rpx;
+  box-shadow: 0 5rpx 5rpx 5rpx #ededed;
+  z-index: 3;
+  display: none;
+}
+
+.team-cont text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #464646;
+  line-height: 62rpx;
+  font-weight: bold;
+}
+
+.team-cont text+text {
+  border-top: 1px solid #ddd;
+}
+
+.team-lists {
+  padding-top: 76rpx;
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+
+.team-member {
+  width: 100%;
+  padding: 30rpx;
+  padding-left: 146rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 4rpx;
+  position: relative;
+  height: 150rpx;
+  overflow: hidden;
+}
+
+.team-member image {
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+}
+
+.member-text {
+  float: left;
+}
+
+.level {
+  float: right;
+  text-align: center;
+}
+
+.user-name {
+  font-size: 28rpx;
+  color: #141414;
+  line-height: 28rpx;
+  display: block;
+  margin-bottom: 25rpx;
+}
+
+.nickname {
+  font-size: 24rpx;
+  color: #141414;
+  display: block;
+}
+
+.level-name {
+  font-size: 26rpx;
+  color: #ffa633;
+  display: block;
+  margin-bottom: 28rpx;
+}
+
+.data {
+  font-size: 18rpx;
+  color: #8c8c8c;
+  display: block;
+}
+
+.head {
+  color: #ff1849;
+}
+
+.share {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.share-btnr {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ff1849;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.empty {
+  font-size: 24rpx;
+  display: block;
+  padding: 20rpx 0;
+  color: #ccc;
+  text-align: center;
+}

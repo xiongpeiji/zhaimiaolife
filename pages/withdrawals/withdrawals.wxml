@@ -1,0 +1,11 @@
+<!--pages/withdrawals/withdrawals.wxml-->
+<view class='container'>
+  <view class='dra-con'>
+    <text class='dar-tit'>账户余额</text>
+    <text class='balance'>{{account_balance}}元</text>
+    <view class='dra-btn' bindtap='withdrawals'>提现</view>
+    <text class='txxz'>提现须知：</text>
+    <text class='tx-text'>1、满20元即可提现</text>
+    <text class='tx-text'>2、确认收货后10天的结算金额会进入账户余额</text>
+  </view>
+</view>

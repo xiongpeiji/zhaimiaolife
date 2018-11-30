@@ -1,0 +1,64 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+
+  <view class='user-info'>
+    <view class='user-cont' hidden="{{!isLogin}}">
+      <view class='user-phone'>
+        <image src='{{userInfo.avatar}}'></image>
+      </view>
+      <view class='user-text'>
+        <text class='user-name'>{{userInfo.nickname}}</text>
+        <view class='v-er'>
+          <view class="v_url" bindtap='gotopromoters'>{{userInfo.level_name}}
+            <image src='../../images/v-er.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='user-cont' hidden="{{isLogin}}">
+      <view class='user-phone'>
+        <image src="{{userInfo.avatar}}"></image>
+      </view>
+      <view class='user-text'>
+        <text class='user-name'>未登录</text>
+        <text class="user-name login" bindtap='userLogin'>点击登录</text>
+      </view>
+    </view>
+    <view class='w-tips' hidden="{{!isLogin}}">{{userInfo.invite_more_tips}}</view>
+  </view>
+  <!--链接列表-->
+  <view class='us-link'>
+    <view class='us-link-lis' hidden="{{!isLogin}}" bindtap="gotoIncome">
+      <image class='nav-icon' src='../../images/us-icon01.png'></image>
+      <text class='tit-text-us'>推广收益</text>
+      <image class='right-icon' src='../../images/us-iconlink.png'></image>
+    </view>
+    <view class='us-link-lis' hidden="{{!isLogin}}" bindtap='gotoTeam'>
+      <image class='nav-icon' src='../../images/us-icon02.png'></image>
+      <text class='tit-text-us'>我的团队</text>
+      <image class='right-icon' src='../../images/us-iconlink.png'></image>
+    </view>
+    <view class='us-link-lis row-mb'>
+      <image class='nav-icon' src='../../images/us-icon03.png'></image>
+      <button open-type='share' plain="true" class='tit-text-us'>分享小程序</button>
+      <image class='right-icon' src='../../images/us-iconlink.png'></image>
+      <text class='shar-text-tips'>{{invite_tips}}</text>
+    </view>
+
+    <view class='us-link-lis'>
+      <image class='nav-icon' src='../../images/us-icon04.png'></image>
+      <button open-type='contact' plain="true" class='tit-text-us'>客服中心</button>
+      <image class='right-icon' src='../../images/us-iconlink.png'></image>
+    </view>
+
+    <!-- 
+    <view class='us-link-lis row-mb' bindtap="gotoAbout"> 
+      <image class='nav-icon' src='../../images/us-icon05.png'></image>
+      <text class='tit-text-us'>关于我们</text>
+      <image class='right-icon' src='../../images/us-iconlink.png'></image>
+    </view>
+    -->
+
+  </view>
+  <text class='versions'>当前版本1.0.0</text>
+</view>

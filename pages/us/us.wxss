@@ -1,0 +1,162 @@
+/* pages/my/my.wxss */
+
+.user-info {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ff1849;
+  padding: 45rpx 45rpx 28rpx 68rpx;
+  overflow: hidden;
+  margin-bottom: 8rpx;
+}
+
+.user-cont {
+  overflow: hidden;
+  margin-bottom: 54rpx;
+}
+
+.user-phone {
+  width: 140rpx;
+  height: 140rpx;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0;
+  float: left;
+}
+
+.user-phone image {
+  width: 100%;
+  height: 100%;
+}
+
+.user-text {
+  float: left;
+  padding-top: 42rpx;
+  padding-left: 45rpx;
+  font-size: 0;
+}
+
+.user-text .user-name {
+  font-size: 34rpx;
+  line-height: 34rpx;
+  color: #fff;
+  display: block;
+  margin-bottom: 25rpx;
+}
+
+.user-text .user-name.login {
+  font-size: 24rpx;
+  padding: 4rpx 28rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #fff;
+}
+
+.v-er {
+  display: block;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 0;
+  color: #fff;
+}
+
+.v-er .v_url {
+  display: block;
+  width: 200rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+.v-er .v_url image {
+  width: 28rpx;
+  height: 28rpx;
+  display: inline-block;
+  margin-left: 18rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.w-tips {
+  display: block;
+  font-size: 22rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.us-link {
+  width: 100%;
+}
+
+.us-link-lis {
+  width: 100%;
+  height: 86rpx;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 2rpx;
+  position: relative;
+  line-height: 86rpx;
+}
+
+.nav-icon {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin-left: 56rpx;
+  margin-top: 17rpx;
+  margin-right: 42rpx;
+}
+
+.tit-text-us {
+  font-size: 28rpx;
+  color: #141414;
+  display: block;
+  float: left;
+}
+
+.right-icon {
+  display: block;
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 50rpx;
+  margin-top: 27rpx;
+}
+
+.shar-text-tips {
+  font-size: 22rpx;
+  color: #ff1849;
+  display: block;
+  float: right;
+}
+
+.row-mb {
+  margin-bottom: 10rpx;
+}
+
+.versions {
+  text-align: center;
+  font-size: 22rpx;
+  padding-top: 44rpx;
+  background: #fff;
+  display: block;
+  width: 100%;
+  color: #b2b2b2;
+}
+
+.us-link-lis button {
+  border: 0;
+  border-color: transparent;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 86rpx;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: left;
+  text-indent: 148rpx;
+}

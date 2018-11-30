@@ -1,0 +1,184 @@
+<!--pages/commision/commision.wxml-->
+<view class='container'>
+  <!--排序菜单-->
+  <view class='sort-cont'>
+    <view class='item-sort active'>综合</view>
+    <view class='item-sort'>销量</view>
+    <view class='item-sort'>
+      价格
+      <image src='../../images/sort.png'></image>
+    </view>
+    <view class='item-sort'>
+      佣金
+      <image src='../../images/sort.png'></image>
+    </view>
+  </view>
+
+  <!--商品列表-->
+  <view class='product-cont search-content'>
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-01.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+        <view class='pri-sm'>
+          收益
+          <text>100元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-02.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+        <view class='pri-sm'>
+          收益
+          <text>100元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-02.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+        <view class='pri-sm'>
+          收益
+          <text>100元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-01.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+        <view class='pri-sm'>
+          收益
+          <text>100元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-02.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+        <view class='pri-sm'>
+          收益
+          <text>100元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='pro-list'>
+      <view class='pro-img'>
+        <image src='../../images/productImg/product-01.jpg'></image>
+        <text>券200元</text>
+      </view>
+      <text class='pro-tit'>2017秋季新款女装欧美时装斑装斑装斑</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥1890.00</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥2089</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>100件</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

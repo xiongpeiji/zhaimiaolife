@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <view class='about-img'>
+    <image src='../../images/about.png'></image>
+    <text class='version'>1.0.0</text>
+  </view>
+</view>

@@ -1,0 +1,104 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx6cf897203747c873",
+	"projectname": "news",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "详情页佣金用户",
+					"pathName": "pages/commision/commision",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推广页",
+					"pathName": "pages/promotion/promotion",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的团队",
+					"pathName": "pages/team/team",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推广收益",
+					"pathName": "pages/income/income",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "提现页面",
+					"pathName": "pages/withdrawals/withdrawals",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "什么是推广员",
+					"pathName": "pages/promoters/promoters",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现记录",
+					"pathName": "pages/presentrecord/presentrecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收入流水",
+					"pathName": "pages/diaryaccount/diaryaccount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单明细",
+					"pathName": "pages/orderdetails/orderdetails",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setaccount",
+					"pathName": "pages/setaccount/setaccount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setmobile",
+					"pathName": "pages/setmobile/setmobile",
+					"query": ""
+				}
+			]
+		}
+	}
+}

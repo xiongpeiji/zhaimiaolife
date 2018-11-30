@@ -1,0 +1,12 @@
+<view class="container">
+  <form bindsubmit='submit'>
+    <input name="mobile" bindinput='regMobile' placeholder='手机号码'></input>
+    <input name="password" type="password" placeholder='登录密码'></input>
+    <view class="code">
+      <input bindinput='regCode' name="sms_code" placeholder='验证码'></input>
+      <button disabled='{{cding}}' class="send {{cding?'disable': ''}}" bindtap="send">发送验证码 {{countdown}}</button>
+    </view>
+    <button form-type='submit'>确认设置</button>
+  </form>
+  <!-- <image src="https://pic.taodianke.com/static/MiniProgram/share.png"></image> -->
+</view>

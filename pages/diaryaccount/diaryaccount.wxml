@@ -1,0 +1,72 @@
+<!--pages/diaryaccount/diaryaccount.wxml-->
+<view class='container'>
+  <view class='statis-con'>
+    <view class='statistics'>
+      <view class='data-bind'>
+        <view class='data-fl'>
+          <view class='data-picker'>
+            <view class="time">
+              <picker mode="date" value="{{start_day}}" bindchange="startChange">
+                <view class="picker">{{start_day}}</view>
+              </picker>
+              <image class='jt-up' src='../../images/jt-up.png'></image>
+              <text class="line">-</text>
+              <picker mode="date" value="{{end_day}}" bindchange="endChange">
+                <view class="picker">{{end_day}}</view>
+              </picker>
+              <image class='jt-up' src='../../images/jt-up.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='search-img-r' bindtap='shiftAction'>
+          <image src='../../images/search-f.png'></image>
+        </view>
+      </view>
+      <view class='take-in-pay'>
+        <view class='take-in take-pay-l'>
+          <text class='take-in-tit'>收入</text>
+          <text class='take-in-mn'>￥{{detail.income}}</text>
+        </view>
+        <view class='take-in take-pay-r'>
+          <text class='take-in-tit'>支出</text>
+          <text class='take-in-mn'>￥{{detail.expend}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--右边搜索下拉面板-->
+  <view class='search-panel' catchtap='hideShiftAct' hidden="{{hideShift}}">
+    <view class='search-nav'>
+      <view class='nav-cont {{state}}' catchtap='changeState'>
+        <view class='whole all' data-type="all">全部</view>
+        <view class="self" data-type="self">自购推广</view>
+        <view class="son" data-type="son">邀请分成</view>
+        <view class="group_leader" data-type="group_leader">团长分成</view>
+        <view class="award" data-type="award">平台奖励</view>
+        <view class="red_packet" data-type="red_packet">现金红包</view>
+        <view class="withdraw" data-type="withdraw">提现</view>
+        <view class="partner" data-type="partner">提现</view>
+      </view>
+      <view class='sure-btn' catchtap='ensure'>确定</view>
+    </view>
+  </view>
+  <view class='cord-item'>
+    <view class="empty" hidden="{{listLen != 0}}">暂无收入流水~</view>
+    <block wx:for="{{detail.list}}">
+      <view class='cord-list'>
+        <text class='wx-num'>订单号 {{item.order_sn}}</text>
+        <view class='js-money'>
+          <view class='state-text'>
+            <text class='js-text yjs-text'>{{item.source_view}}</text>
+          </view>
+          <text class='jine {{item.direction}}'><text class="a">+</text>
+          <text class="e">-</text>￥{{item.money}}</text>
+        </view>
+        <view class='tx-time'>
+          <text class='time-end'>提现时间 {{item.add_time_trans}}</text>
+          <!-- <text class='time-begin'>账户余额：{{item.money}}元</text> -->
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

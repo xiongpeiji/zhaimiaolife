@@ -1,0 +1,307 @@
+/* pages/orderdetails/orderdetails.wxss */
+
+.cord-list {
+  display: block;
+  width: 100%;
+  padding: 30rpx 28rpx 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 12rpx;
+  background: #fff;
+}
+
+.odr-item {
+  display: block;
+  width: 100%;
+  padding: 198rpx 12rpx 0;
+  box-sizing: border-box;
+}
+
+.statis-con {
+  display: block;
+  width: 100%;
+  height: 168rpx;
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+
+.statistics {
+  padding: 15rpx 30rpx 15rpx 46rpx;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+
+.data-bind {
+  height: 44rpx;
+  position: relative;
+}
+
+.data-fl {
+  float: left;
+}
+
+.data-fl .jt-up, .data-fl text {
+  float: left;
+}
+
+.data-fl .time {
+  font-size: 24rpx;
+  color: #010101;
+  float: left;
+}
+
+.data-fl .line {
+  margin: 0 20rpx;
+}
+
+.jt-up {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  float: left;
+}
+
+.search-img-r {
+  float: right;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.search-img-r image {
+  width: 100%;
+  height: 100%;
+}
+
+.take-in-pay {
+  overflow: hidden;
+  padding-top: 10rpx;
+}
+
+.take-in {
+  width: 33.33%;
+  display: block;
+  text-align: center;
+  float: left;
+}
+
+take-pay-r {
+  float: right;
+}
+
+.take-in-tit {
+  display: block;
+  font-size: 24rpx;
+  color: #141414;
+  margin-bottom: 10rpx;
+}
+
+.take-in-mn {
+  font-size: 30rpx;
+  color: #141414;
+}
+
+.take-pay-r text {
+  color: #010101;
+}
+
+.search-panel {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 60rpx;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.search-nav {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 35rpx 30rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.nav-cont {
+  padding-left: 186rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-cont view {
+  display: block;
+  height: 44rpx;
+  line-height: 44rpx;
+  width: 150rpx;
+  text-align: center;
+  float: left;
+  border: 2rpx solid #f6012d;
+  font-size: 24rpx;
+  color: #f00;
+  border-radius: 24rpx;
+  margin-left: 15rpx;
+  margin-bottom: 48rpx;
+}
+
+.nav-cont .whole {
+  position: absolute;
+  left: 70rpx;
+  top: 0;
+  width: 102rpx;
+  margin-left: 0;
+}
+
+.nav-cont.all.state .all, .nav-cont.pay.state .pay, .nav-cont.end.state .end,
+.nav-cont.all.sorce .all, .nav-cont.self.sorce .self, .nav-cont.son.sorce .son,
+.nav-cont.group_leader.sorce .group_leader, .nav-cont.partner.sorce .partner {
+  background: #f00;
+  color: #fff;
+}
+
+.nav-cont text {
+  display: block;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 24rpx;
+  color: #141414;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sure-btn {
+  display: block;
+  width: 300rpx;
+  height: 62rpx;
+  text-align: center;
+  line-height: 62rpx;
+  background: #f00;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 30rpx;
+  margin: auto;
+}
+
+.data-picker {
+  overflow: hidden;
+  float: left;
+}
+
+.data-picker picker {
+  font-size: 24rpx;
+  color: #010101;
+  float: left;
+}
+
+.odr-con {
+  padding: 5rpx 5rpx 12rpx;
+  background: #fff;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 24rpx;
+}
+
+.odr-dis {
+  padding-left: 186rpx;
+  position: relative;
+}
+
+.odr-img {
+  width: 168rpx;
+  height: 168rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pro-title {
+  font-size: 24rpx;
+  color: #1a1a1a;
+  display: block;
+  line-height: 30rpx;
+  padding: 8rpx 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15rpx;
+}
+
+.money-con {
+  padding-bottom: 25rpx;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.lf-num {
+  width: 40%;
+  text-align: center;
+  float: left;
+  font-size: 24rpx;
+  color: #1a1a1a;
+}
+
+.lf-num text {
+  display: block;
+}
+
+.tiaom {
+  margin-bottom: 15rpx;
+}
+
+.font-blod {
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.stats-con {
+  overflow: hidden;
+  margin-bottom: 25rpx;
+}
+
+.left-btn {
+  width: 40%;
+  float: left;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.yfk {
+  color: #00a6b5;
+}
+
+.zgtg {
+  color: #ff8400;
+}
+
+.odr-time {
+  overflow: hidden;
+  font-size: 18rpx;
+  color: #8c8c8c;
+}
+
+.creation-time {
+  float: left;
+  margin-left: 15rpx;
+}
+
+.end-time {
+  float: right;
+  margin-right: 15rpx;
+}
+
+.yjs {
+  color: #f00;
+}
+
+.fc {
+  color: #aa3c00;
+}
+
+.empty {
+  font-size: 24rpx;
+  display: block;
+  padding: 20rpx 0;
+  color: #ccc;
+  text-align: center;
+}

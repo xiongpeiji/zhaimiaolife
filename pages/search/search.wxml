@@ -1,0 +1,83 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="search-header">
+    <view class='search-box'>
+      <view class='search-cont'>
+        <image class='search-bigimg' src='../../images/search-big.png'></image>
+        <input auto-focus="true" value="{{keywords}}" class='search-input' bindfocus='showHotSearch' bindinput='changeWords' placeholder='{{search_tips}}'></input>
+        <view class='search-btn' bindtap="search">搜索</view>
+      </view>
+    </view>
+    <!--排序菜单-->
+    <view class='sort-cont {{desc}}'>
+      <view class='item-sort all' bindtap="descGoods" data-desctype="all">综合</view>
+      <view class='item-sort count' bindtap="descGoods" data-desctype="count">销量</view>
+      <view class='item-sort price {{sort_price}}' bindtap="descGoods" data-desctype="price">
+        价格
+        <image src='../../images/sort.png' class="default"></image>
+        <image src='../../images/sort-down.png' class="down"></image>
+        <image src='../../images/sort-up.png' class="up"></image>
+      </view>
+      <view wx:if="{{level > 0}}" class='item-sort income {{sort_income}}' bindtap="descGoods" data-desctype="income">
+        收益
+        <image src='../../images/sort.png' class="default"></image>
+        <image src='../../images/sort-down.png' class="down"></image>
+        <image src='../../images/sort-up.png' class="up"></image>
+      </view>
+    </view>
+  </view>
+  <!--搜索面板-->
+  <view class='search-panel' hidden="{{hideHot}}">
+    <text class='sea-pan-tit'>大家都搜:</text>
+    <view class='recommend'>
+      <block wx:for="{{search_keyword}}" wx:key="hot">
+        <button class="" plain='true' data-index="{{index}}" bindtap='gotoHot'>
+          {{item}}
+        </button>
+      </block>
+    </view>
+    <view class='sea-pan-tit' hidden="{{hideHistory}}">历史搜索:</view>
+    <view class='recommend history-show'>
+      <block wx:for="{{history}}" wx:key="history">
+        <button class="" plain='true' data-index="{{index}}" bindtap='gotoHis'>
+          {{item}}
+        </button>
+      </block>
+    </view>
+    <view class='clear-history' hidden="{{hideHistory}}">
+      <image src='../../images/delete.png'></image>
+      <text bindtap='clearHis'>清除历史记录</text>
+    </view>
+  </view>
+
+  <!--商品列表-->
+  <view class='product-cont search-content' hidden="{{!hideHot}}">
+    <view class='pro-list' wx:for="{{goods}}" wx:key="goods" data-id="{{item.goods_id}}" bindtap='gotoDetail'>
+      <view class='pro-img'>
+        <image src='{{item.goods_thumbnail_url}}'></image>
+        <text>券{{item.coupon_discount}}元</text>
+      </view>
+      <text class='pro-tit'>{{item.goods_name}}</text>
+      <view class='price-text'>
+        <view class='pri-big'>
+          券后
+          <text>￥{{item.after_coupon_price}}</text>
+        </view>
+        <view class='pri-sm' wx:if="{{level > 0}}">
+          收益
+          <text>{{item.commission}}元</text>
+        </view>
+      </view>
+      <view class='price-text'>
+        <view class='pri-sm-l'>
+          原价
+          <text>￥{{item.min_group_price}}</text>
+        </view>
+        <view class='pri-sm'>
+          销量
+          <text>{{item.sold_quantity}}件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

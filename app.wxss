@@ -1,0 +1,21 @@
+/**app.wxss**/
+
+page {
+  min-height: 100%;
+}
+
+.container {
+  background: #f7f7f7;
+  min-height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+image {
+  display: block;
+}
+
+swiper, swiper image {
+  width: 100%;
+  height: 250rpx;
+}

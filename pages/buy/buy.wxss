@@ -1,0 +1,198 @@
+/* pages/buy/buy.wxss */
+
+.container {
+  padding-bottom: 140rpx;
+}
+
+swiper, swiper image {
+  height: 750rpx;
+}
+
+.promotion-img {
+  width: 100%;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.promotion-img .current {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  font-size: 24rpx;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 8rpx;
+}
+
+.promotion-img image {
+  display: block;
+  width: 100%;
+  height: 750rpx;
+}
+
+.promotion-text {
+  width: 100%;
+  padding: 20rpx 12rpx 0;
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+}
+
+.promotion-box {
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 25rpx;
+}
+
+.pro-title {
+  font-size: 26rpx;
+  color: #141414;
+  font-weight: bold;
+  line-height: 46rpx;
+}
+
+.pro-price {
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-bottom: 12rpx;
+}
+
+.now-price {
+  float: left;
+  font-size: 26rpx;
+  color: #ff1849;
+  font-weight: bold;
+}
+
+.now-price text {
+  font-size: 36rpx;
+  color: #ff1849;
+}
+
+.pro-price .cost-price {
+  float: left;
+  font-size: 22rpx;
+  color: #8c8c8c;
+  margin-left: 30rpx;
+  text-decoration: line-through;
+}
+
+.ticket {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 0;
+}
+
+.ticket-price {
+  display: block;
+  float: left;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #fbc359;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 10rpx;
+}
+
+.ticket-nums {
+  font-size: 22rpx;
+  color: #888;
+  margin-left: 20rpx;
+}
+
+.volume {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22rpx 30rpx 4rpx 40rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.volume text {
+  font-size: 22rpx;
+  color: #808080;
+}
+
+.volume .vol-num {
+  float: left;
+}
+
+.volume .get-money {
+  float: right;
+}
+
+.share {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fdfdfd;
+}
+
+.share-btnl {
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ff8080; /*ff8080*/
+  font-weight: bold;
+  flex: 1;
+}
+
+.share-btnr {
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff !important;
+  background: #ff1849 !important;
+  font-weight: bold;
+  border: 0 !important;
+  border-radius: 0;
+  flex: 1;
+}
+
+.unlevel .share-btnl {
+  background: #ff1849 !important;
+}
+
+.unlevel .share-btnr {
+  display: none;
+}
+
+.btn-all {
+  width: 562rpx;
+  float: right;
+  display: flex;
+}
+
+.back-home {
+  width: 188rpx;
+  float: left;
+  height: 100rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #808080;
+  position: relative;
+  overflow: hidden;
+  font-family: '平方特细';
+}
+
+.back-home image {
+  width: 38rpx;
+  height: 38rpx;
+  display: block;
+  margin: 19rpx 0 11rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -19rpx;
+}

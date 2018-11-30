@@ -1,0 +1,102 @@
+/* pages/presentrecord/presentrecord.wxss */
+
+.container {
+  padding-bottom: 100rpx;
+}
+
+.cord-list {
+  display: block;
+  width: 100%;
+  padding: 30rpx 28rpx 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 12rpx;
+  background: #fff;
+}
+
+.cord-item {
+  display: block;
+  width: 100%;
+  padding-top: 12rpx;
+}
+
+.wx-num {
+  display: block;
+  width: 100%;
+  height: 24rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #141414;
+  margin-bottom: 28rpx;
+}
+
+.js-money {
+  height: 32rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 22rpx;
+  position: relative;
+}
+
+.state-text {
+  display: block;
+  float: left;
+  overflow: hidden;
+  height: 30rpx;
+  padding-left: 20rpx;
+}
+
+.state-text image {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin-right: 18rpx;
+}
+
+.jine {
+  display: block;
+  float: right;
+}
+
+.js-text {
+  float: left;
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.tx-time {
+  overflow: hidden;
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size: 18rpx;
+  color: #8c8c8c;
+}
+
+.time-begin {
+  float: left;
+}
+
+.time-begin {
+  float: right;
+}
+
+.wjs-text {
+  color: #8c8c8c;
+}
+
+.cause {
+  display: block;
+  font-size: 18rpx;
+  color: #f00;
+  position: absolute;
+  left: 25rpx;
+  top: 30rpx;
+}
+
+.empty {
+  font-size: 24rpx;
+  display: block;
+  padding: 20rpx 0;
+  color: #ccc;
+  text-align: center;
+}

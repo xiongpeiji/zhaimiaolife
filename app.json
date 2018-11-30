@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/us/us",
+    "pages/navitem/navitem",
+    "pages/commision/commision",
+    "pages/promotion/promotion",
+    "pages/buy/buy",
+    "pages/about/about",
+    "pages/team/team",
+    "pages/income/income",
+    "pages/withdrawals/withdrawals",
+    "pages/promoters/promoters",
+    "pages/presentrecord/presentrecord",
+    "pages/diaryaccount/diaryaccount",
+    "pages/orderdetails/orderdetails",
+    "pages/menu/menu",
+    "pages/webview/webview",
+    "pages/setaccount/setaccount",
+    "pages/setmobile/setmobile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff1849",
+    "navigationBarTitleText": "赚推推",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#ccc",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#141414",
+    "selectedColor": "#ff1849",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab-index.png",
+        "selectedIconPath": "images/active-index.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/tab-search.png",
+        "selectedIconPath": "images/active-search.png"
+      },
+      {
+        "pagePath": "pages/us/us",
+        "text": "我的",
+        "iconPath": "images/tab-my.png",
+        "selectedIconPath": "images/active-my.png"
+      }
+    ]
+  }
+}

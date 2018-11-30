@@ -1,0 +1,16 @@
+<view class="container">
+  <form bindsubmit='submit'>
+    <input name="bank_account_real_name" placeholder='提现账号收款人姓名'></input>
+    <picker range="{{bank}}" bindchange="selectBank">
+      <input name="bank_name" value="{{curBank}}" placeholder='提现银行'></input>
+    </picker>
+    <input name="sub_bank_name" placeholder='所属支行(所在省市)'></input>
+    <input name="bank_account" placeholder='提现账户'></input>
+    <view class="code">
+      <input name="sms_code" placeholder='验证码'></input>
+      <button disabled='{{cding}}' class="send {{cding?'disabled': ''}}" bindtap="send">发送验证码 {{countdown}}</button>
+    </view>
+    <button form-type='submit'>确认设置</button>
+  </form>
+  <!-- <image src="https://pic.taodianke.com/static/MiniProgram/share.png"></image> -->
+</view>

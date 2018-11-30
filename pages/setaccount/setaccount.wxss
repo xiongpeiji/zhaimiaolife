@@ -1,0 +1,54 @@
+/* pages/setaccount/setaccount.wxss */
+
+.container {
+  padding: 40rpx;
+  min-height: 100%;
+}
+
+input, .bank {
+  width: 100%;
+  background: #fff;
+  height: 84rpx;
+  display: block;
+  border-radius: 16rpx;
+  border: 1px solid #ccc;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  margin: 0 0 40rpx;
+}
+
+.bank {
+  color: #ccc;
+  line-height: 84rpx;
+}
+
+.code {
+  padding-right: 320rpx;
+  position: relative;
+}
+
+button {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ff1849;
+  font-weight: bold;
+}
+
+.send {
+  width: 280rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 0;
+  line-height: 84rpx;
+  height: 84rpx;
+}
+
+.disabled {
+  background: #ccc;
+}

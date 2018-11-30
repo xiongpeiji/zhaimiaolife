@@ -1,0 +1,197 @@
+/* pages/income/income.wxss */
+
+.tg-top {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 32rpx 55rpx 0;
+  background: #fff;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+}
+
+.month {
+  float: left;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tg-top .month+.month {
+  border-left: 1px solid #e6e6e6;
+}
+
+.mon-title {
+  display: block;
+  font-size: 30rpx;
+  color: #4c4c4c;
+  line-height: 55rpx;
+  height: 55rpx;
+}
+
+.estimate {
+  display: block;
+  padding-bottom: 35rpx;
+  font-size: 24rpx;
+}
+
+.estimate text {
+  font-size: 42rpx;
+  font-weight: bold;
+}
+
+.overview {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+
+.view-list {
+  display: block;
+  text-align: center;
+  width: 33.33%;
+  float: left;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.view-list image {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: auto;
+  margin-bottom: 20rpx;
+}
+
+.view-list text {
+  display: block;
+  text-align: center;
+}
+
+.view-tit {
+  font-size: 24rpx;
+  color: #141414;
+  margin-bottom: 25rpx;
+}
+
+.view-cons {
+  font-size: 36rpx;
+  color: #141414;
+}
+
+.tg-link {
+  width: 100%;
+}
+
+.tg-text {
+  height: 84rpx;
+  line-height: 84rpx;
+  position: relative;
+  padding: 0 45rpx;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 2px;
+}
+
+.tg-text text {
+  display: block;
+  line-height: 84rpx;
+  font-size: 24rpx;
+}
+
+.tg-text image {
+  display: block;
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-top: 26rpx;
+}
+
+.text-mb {
+  margin-bottom: 30rpx;
+}
+
+.text-title-tg {
+  float: left;
+}
+
+.text-title-tg-fr {
+  float: right;
+  margin-right: 25rpx;
+}
+
+.rules {
+  font-size: 24rpx;
+  color: #ff1849;
+  text-align: center;
+  padding-top: 64rpx;
+  padding-bottom: 35rpx;
+}
+
+.max-bg {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+}
+
+.rules-con {
+  position: absolute;
+  background: #fff;
+  z-index: 101;
+  width: 542rpx;
+  left: 50%;
+  top: 230rpx;
+  margin-left: -271rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.rules-title {
+  text-align: center;
+  display: block;
+  height: 100rpx;
+  background: #ff1849;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.rules-text-list {
+  width: 100%;
+  padding: 10rpx 20rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d5d5d5;
+  font-size: 24rpx;
+  color: #8c8c8c;
+}
+
+.rules-text-list view {
+  position: relative;
+  padding-left: 40rpx;
+  margin-bottom: 12rpx;
+  line-height: 30rpx;
+}
+
+.rules-text-list view text {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-know {
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #8c8c8c;
+}

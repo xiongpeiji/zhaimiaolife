@@ -1,0 +1,45 @@
+<!--pages/buy/buy.wxml-->
+<view class='container'>
+  <view class='promotion-img'>
+    <swiper autoplay="{{autoplay}}" bindchange="swiper">
+      <block wx:for="{{goods.goods_gallery_urls}}" wx:key="swiper">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="current">{{current}}/{{swiper_all}}</view>
+  </view>
+  <view class='promotion-text'>
+    <view class='promotion-box'>
+      <text class='pro-title'>{{goods.goods_name}}</text>
+      <view class='pro-price'>
+        <view class='now-price'>券后
+          <text>{{goods.after_coupon_price}}元</text>
+        </view>
+        <text class='cost-price'>原价 {{goods.min_normal_price}}</text>
+      </view>
+      <view class='ticket'>
+        <text class='ticket-price'>券{{goods.coupon_discount}}元</text>
+        <text class='ticket-nums'>剩余{{goods.coupon_total_quantity}}张</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='volume'>
+    <text class='vol-num'>销量 {{goods.sold_quantity}}件</text>
+    <text class='get-money' wx:if='{{level > 0}}'>收益 {{goods.commission}}元</text>
+  </view>
+
+  <!--购买按钮-->
+  <view class='share'>
+    <view class='back-home' bindtap="backHome">
+      <image src="../../images/back-home.png"></image>
+      回首页
+    </view>
+    <view class="btn-all {{level > 0 ? 'level':'unlevel'}}">
+      <view class='share-btnl' bindtap="openTo">领券自购</view>
+      <button open-type='share' plain='true' class='share-btnr'>分享赚现金</button>
+    </view>
+  </view>
+</view>

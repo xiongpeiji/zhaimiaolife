@@ -1,0 +1,30 @@
+<!--pages/promotion/promotion.wxml-->
+<view class='container'>
+  <view class='promotion-img'>
+    <image src='../../images/productImg/tuiguang.jpg'></image>
+  </view>
+  <view class='promotion-text'>
+    <view class='promotion-box'>
+      <text class='pro-title'>2017秋季新款女装欧美时尚修身短袖卫衣高腰裤配小清新长衫</text>
+      <view class='pro-price'>
+        <view class='now-price'>券后<text>1890.00元</text></view>
+        <text class='cost-price'>原价  2090.00</text>
+      </view>
+      <view class='ticket'>
+        <text class='ticket-price'>券200元</text>
+        <text class='ticket-nums'>剩余8888/张</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='volume'>
+    <text class='vol-num'>销量 1889件</text>
+    <text class='get-money'>收益 100元</text>
+  </view>
+
+  <!--分享按钮-->
+  <view class='share'>
+    <view class='share-btnl'>领券自购</view>
+    <view class='share-btnr'>分享赚现金</view>
+  </view>
+</view>

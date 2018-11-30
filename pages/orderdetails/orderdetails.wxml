@@ -1,0 +1,90 @@
+<!--pages/orderdetails/orderdetails.wxml-->
+<view class='container'>
+  <view class='statis-con'>
+    <view class='statistics'>
+      <view class='data-bind'>
+        <view class='data-fl'>
+          <view class='data-picker'>
+            <view class="time">
+              <picker mode="date" value="{{start_day}}" bindchange="startChange">
+                <view class="picker">{{start_day}}</view>
+              </picker>
+              <image class='jt-up' src='../../images/jt-up.png'></image>
+              <text class="line">-</text>
+              <picker mode="date" value="{{end_day}}" bindchange="endChange">
+                <view class="picker">{{end_day}}</view>
+              </picker>
+              <image class='jt-up' src='../../images/jt-up.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class='search-img-r' bindtap='shiftAction'>
+          <image src='../../images/search-f.png'></image>
+        </view>
+      </view>
+      <view class='take-in-pay'>
+        <view class='take-in'>
+          <text class='take-in-tit'>总订单</text>
+          <text class='take-in-mn'>{{detail.total_num}}</text>
+        </view>
+        <view class='take-in'>
+          <text class='take-in-tit'>总订单金额</text>
+          <text class='take-in-mn'>￥{{detail.total_money}}</text>
+        </view>
+        <view class='take-in'>
+          <text class='take-in-tit'>总佣金</text>
+          <text class='take-in-mn'>￥{{detail.total_commission}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--右边搜索下拉面板-->
+  <view class='search-panel' bindtap='hideShiftAct' hidden="{{hideShift}}">
+    <view class='search-nav'>
+      <view class='nav-cont state {{state}}' catchtap='changeState'>
+        <text>状态</text>
+        <view class='whole all' data-type="all">全部</view>
+        <view class="pay" data-type="pay">已付款</view>
+        <view class="end" data-type="end">已结算</view>
+      </view>
+      <view class='nav-cont sorce {{sorce}}' catchtap='changeSorce'>
+        <text>来源</text>
+        <view class='whole all' data-type="all">全部</view>
+        <view class="self" data-type="self">自购推广</view>
+        <view class="son" data-type="son">邀请分成</view>
+        <view class="group_leader" data-type="group_leader">团长分成</view>
+        <view class="partner" data-type="partner">合伙人分成</view>
+      </view>
+      <view class='sure-btn' bindtap='ensure'>确定</view>
+    </view>
+  </view>
+  <view class='odr-item'>
+    <view class="empty" hidden="{{listLen != 0}}">暂时没有订单~</view>
+    <block wx:for="{{detail.list}}" data-index="{{index}}">
+      <view class='odr-con'>
+        <view class='odr-dis'>
+          <image class='odr-img' src='{{item.goods_thumbnail_url}}'></image>
+          <text class='pro-title'>{{item.goods_name}}</text>
+          <view class='money-con'>
+            <view class='lf-num'>
+              <text class='tiaom'>付款金额</text>
+              <text class='font-blod'>￥{{item.order_amount}}</text>
+            </view>
+            <view class='lf-num'>
+              <text class='tiaom'>成交预估收入</text>
+              <text class='font-blod'>￥{{item.commission}}</text>
+            </view>
+          </view>
+          <view class='stats-con'>
+            <view class='left-btn yjs'>{{detail.state}}</view>
+            <view class='left-btn fc'>{{detail.source_view}}</view>
+          </view>
+        </view>
+        <view class='odr-time'>
+          <text class='creation-time'>创建时间：{{item.add_time_trans}}</text>
+          <!-- <text class='end-time'>结算时间：{{item.add_time}}</text> -->
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

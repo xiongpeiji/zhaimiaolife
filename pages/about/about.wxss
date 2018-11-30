@@ -1,0 +1,31 @@
+/* pages/about/about.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-img {
+  width: 188rpx;
+  height: 188rpx;
+  margin: 64rpx auto;
+}
+
+.about-img image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 64rpx;
+}
+
+.version {
+  display: block;
+  font-size: 30rpx;
+  color: #8c8c8c;
+  text-align: center;
+}
